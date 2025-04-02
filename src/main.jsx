@@ -1,14 +1,13 @@
-import { ConfigProvider } from 'antd';
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { HotelApp } from './HotelApp'
-import App from './App.jsx';
+import {ConfigProvider} from "antd";
+import {StrictMode} from "react";
+import {createRoot} from "react-dom/client";
+import {HotelApp} from "./HotelApp";
+import App from "./App.jsx";
 
-
-import './index.css'
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <ConfigProvider
+import "./index.css";
+createRoot(document.getElementById("root")).render(
+	<StrictMode>
+		<ConfigProvider
       theme={{
         components: {
           Select: {
@@ -20,10 +19,7 @@ createRoot(document.getElementById('root')).render(
         }
       }}
     >
-      <App />
-
-    
-    </ConfigProvider>
-  </StrictMode>,
-)
-
+		<App />
+		</ConfigProvider>
+	</StrictMode>
+);

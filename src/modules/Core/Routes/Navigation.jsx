@@ -1,4 +1,4 @@
-
+import { BrowserRouter, Route, Routes } from 'react-router'
 
 
 
@@ -17,7 +17,7 @@ export const Navigation = () => {
 
             </Helmet>
             <BrowserRouter>
-                <QueryParamProvider
+                {/* <QueryParamProvider
                     adapter={ReactRouter6Adapter}
                 >
                     <Routes>
@@ -49,7 +49,7 @@ export const Navigation = () => {
                             />
                         ))}
                     </Routes>
-                </QueryParamProvider>
+                </QueryParamProvider> */}
             </BrowserRouter>
         </>
     )
