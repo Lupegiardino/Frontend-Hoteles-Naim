@@ -1,0 +1,78 @@
+
+.header {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+height: 200px; 
+
+}
+
+.header-left{
+    display: flex;
+}
+.logo {
+    cursor: pointer;
+     height: 100px;
+
+}
+
+.isologo {
+    height: 30px;
+
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form {
+    
+    margin-bottom: 40px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: end;
+}
+h4 {
+    padding: 10px 20px;
+    background-color: rgb(126, 168, 192);
+    color: white;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: 0.5s all ease;
+    justify-content: end;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(126, 168, 192);
+    color: white;
+    border: 2px solid #ccc;
+    border-radius: 2%;
+    cursor: pointer;
+    margin: 0 2px;
+    transition: 0.5s all ease;
+    justify-content: right;
+
+}
+
+
+
+
