@@ -2,7 +2,7 @@ import { ApartmentOutlined, AppstoreAddOutlined, CalendarOutlined, HomeOutlined,
 import { Empty, Skeleton } from 'antd';
 import { useEffect, useState } from 'react';
 import { useAuth } from '../../../auth/context/AuthContext';
-
+import api from '../../api';
 import './HomeDashboard.css';
 
 export const HomeDashboard = () => {

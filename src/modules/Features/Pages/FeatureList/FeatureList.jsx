@@ -3,7 +3,7 @@ import { PaginateItems } from '../../../Core/components';
 import { Modal } from '../../../core/components/Modal/Modal';
 import { FormModalContext } from '../../../Core/context';
 import { FeatureForm } from '../../components';
-
+import { useFeature } from '../../hooks/useFeature';
 
 export const FeaturesList = () => {
     const { handleShowModal } = useContext(FormModalContext);

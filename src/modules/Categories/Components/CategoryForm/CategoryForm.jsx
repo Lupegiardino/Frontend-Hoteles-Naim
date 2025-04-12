@@ -88,7 +88,7 @@ export const CategoryForm = ({ category, onRefetch }) => {
     }, [category]);
 
     useEffect(() => {
-        // Make sure to revoke the data uris to avoid memory leaks, will run on unmount
+        
         return () => files.forEach(file => URL.revokeObjectURL(file.preview));
     }, [files]);
 

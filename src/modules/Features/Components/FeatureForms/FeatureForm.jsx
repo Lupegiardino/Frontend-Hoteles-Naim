@@ -110,7 +110,6 @@ export const FeatureForm = ({ feature, onRefetch }) => {
                     src={file.preview}
                     title={file.name}
                     className='thumb__img'
-                    // Revoke data uri after image is loaded
                     onLoad={() => { URL.revokeObjectURL(file.preview) }}
                 />
             </figure>

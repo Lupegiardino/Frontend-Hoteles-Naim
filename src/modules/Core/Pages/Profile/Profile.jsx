@@ -4,7 +4,7 @@ import { useContext, useState } from 'react';
 import * as Yup from 'yup';
 import { useAuth } from '../../../auth/context/AuthContext';
 import { useUser } from '../../../users/hooks/useUser';
-import { NotificationContext } from '../../context/notificationContext';
+import { NotificationContext } from '../context/notificationContext';
 import './Profile.css';
 
 export const Profile = () => {

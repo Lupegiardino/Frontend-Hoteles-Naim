@@ -7,7 +7,7 @@ import { useCategory } from '../../../categories/hooks/useCategory';
 import { StayCard, StaySkeleton } from '../../../stays/components/';
 import { useStay } from '../../../stays/hooks/useStay';
 import placesOptions from '../../../stays/pages/StaysSearch/options';
-import { NotificationContext } from '../../context/notificationContext';
+import { NotificationContext } from '../context/notificationContext';
 import './Home.css';
 import { SearchOutlined } from '@ant-design/icons';
 

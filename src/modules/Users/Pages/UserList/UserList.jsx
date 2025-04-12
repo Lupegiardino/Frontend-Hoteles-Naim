@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { PaginateItems } from "../../core/components";
-import { Modal } from "../../../core/components/modal/Modal";
+import { Modal } from "../../core/components/modal/Modal";
 import { FormModalContext } from "../../core/context";
 import { UserForm } from "../../components/userForm/userform";
-import { useUser } from "../../hooks/useUser";
+import { useUser } from "../hooks/useUser";
 
 export const UsersList = () => {
 

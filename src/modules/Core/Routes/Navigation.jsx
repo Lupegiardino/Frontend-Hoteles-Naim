@@ -1,5 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { QueryParamProvider } from 'use-query-params';
+import { ReactRouter6Adapter } from 'use-query-params/adapters/react-router-6';
+import { PrivateRoute } from './PrivateRoute';
+import { PublicRoute } from './PublicRoute';
+import routesConfig from './routes';
 
 
 
@@ -17,7 +22,7 @@ export const Navigation = () => {
 
             </Helmet>
             <BrowserRouter>
-                {/* <QueryParamProvider
+                { <QueryParamProvider
                     adapter={ReactRouter6Adapter}
                 >
                     <Routes>
@@ -49,7 +54,7 @@ export const Navigation = () => {
                             />
                         ))}
                     </Routes>
-                </QueryParamProvider> */}
+                </QueryParamProvider> }
             </BrowserRouter>
         </>
     )

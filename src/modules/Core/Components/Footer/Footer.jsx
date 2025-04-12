@@ -8,6 +8,22 @@ export const Footer = () => {
 
     const { toaster } = useContext(NotificationContext);
 
+    const handleWhatsapp = ($e) => {
+        $e.preventDefault();
+        try {
+            const newWindow = window.open('https://wa.me/5493885727746?text=¡Hola!%20Quisiera%20más%20información%20acerca%20de%20Plax.', '_blank');
+            if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+                throw new Error('Please allow popups for this website');
+            }
+        } catch (e) {
+            console.error(e)
+            toaster['error']({
+                message: 'Error al abrir WhatsApp.',
+                description: "No se pudo abrir WhatsApp. Verifica tu conexión.",
+                duration: 3
+            })
+        }
+    }
 
 
     return (
